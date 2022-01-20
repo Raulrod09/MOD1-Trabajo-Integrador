@@ -1,0 +1,493 @@
+
+:root{
+        --color-hover-menu2: rgb(165, 149, 2);
+        --color-fuente-blanco:aliceblue;
+        --background-seccion2:#ffffff;
+        --background-color-menu2:#35a700;
+        --background-color-encabezado:rgba(49, 44, 43, 0.7);
+        --background-color-listado:#35a700;
+        --background-color-main:#e7eef6;
+        --background-color-container:#ffffffef;
+        --background-color-box:#35a700;
+        --background-color-circulo:rgb(250, 183, 0);
+        --color-fuente-texto:#000;
+        --background-color-container2:#ffffffef;
+        --color-fuente-form:aliceblue;
+        --background-color-boton:#35a700;
+        --backgrpund-color-form: #757575;
+}
+
+*{
+        box-sizing: border-box;      
+        text-decoration: none; 
+        font-family: sans-serif;
+        
+}
+
+.padre {
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: var(--background-color-main);
+        position: absolute;
+        width: 100vw;
+        height: 100vw;
+       
+        }
+
+        .header{
+                
+                display: flex;
+                flex-flow: row nowrap ;
+                border-radius: 5px;
+                align-items: baseline;
+                margin-top: 0%;
+            
+                }
+
+                .titulo  {
+                        
+                        
+                        
+                        
+                        flex: 1 1 auto;
+
+                         }
+                  .menu2{ 
+                        flex: 1 1 auto;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        background-color: var(--background-color-menu2);
+                        justify-items: center;
+                        text-align: center; 
+                        padding: 2px;  
+                                              }
+                                                                 
+                                .nav1, .nav2,.nav3,.nav4 { 
+                                        flex: 1 1 auto;
+                                        color: var(--color-fuente-blanco);
+                                        }
+                                        .nav1 a, .nav2 a, .nav3 a, .nav4 a {
+                                                color: var(--color-fuente-blanco);
+                                                font-size:20px;}
+                                        .nav1 :hover ,.nav2 :hover ,.nav3 :hover, .nav4  :hover{
+                                                color: var(--color-hover-menu2);
+                                                        }
+                                        
+        .main{ 
+                display: flex;
+                flex-flow: column nowrap;
+                width: 100vw;
+                margin-left: auto;
+                margin-right: auto;
+                background: var(--background-color-main);
+                padding-bottom: 15px;
+                
+                        }                        
+                                                                                                
+                .seccion1{     
+                                display: flex;
+                                flex-flow: column nowrap ;
+                                justify-content: center;
+                                background:var(--background-seccion2); 
+                                background: url(../img/FONDO.jpeg); 
+                                background-position: center;
+                                background-attachment: contain;   
+                                background-size: cover;
+                                
+                                
+                        }        
+                        
+
+
+                        .encabezado{ 
+                                
+                                flex: 5 1 auto;
+                                display: flex;
+                                justify-content: center;
+                                flex-flow: column  nowrap;
+                                background: var(--background-color-encabezado) ;
+                                height: 30vw;
+                                max-height: 400px;
+                                }
+
+                                
+
+
+                                .titulo2 {  
+                                        flex: 1 1 auto;
+                                        text-align: center;
+                                        color: var(--color-fuente-blanco);
+                                        font-size: 40px;
+                                        font-family: 'sans-serif';
+                                        
+
+                                }
+                
+                                .listado{
+                                        flex: 1 1 auto;
+                                         display: flex;    
+                                         align-items: center; 
+                                        width: 100%;                     
+                                        background-color:var(--background-color-listado);
+                                        width: 45vw ; 
+                                        
+                                        margin: auto;
+                                        margin-top: auto;
+                                        margin-bottom: 10%;
+                                        border-radius: 15px;
+                                                                
+                                        padding: 10px;
+                                        justify-content: space-around;}  
+                                        .listado a{ 
+                                                        text-align: center;
+                                                        color: var(--color-fuente-blanco);
+                                                font-size: 30px;
+                                                
+                                                }
+                                                .listado a:hover{
+                                                        color: var(--color-hover-menu2);
+                                                        }
+                                        
+                                
+                 
+        
+
+                .cont {
+                        background: var(--background-color-container);
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        flex-flow: column nowrap;
+                        width: 90vw;
+                  margin-top: 20px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 15px;
+                        box-shadow: 0px 15px 5px -10px grey;
+                       
+                }
+                        .cursod {
+                                height: 5vw;
+                                font-size: 25px;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                
+                                margin-bottom: 0%;
+                        }
+                                .cursod h4  {
+                                        
+                                        flex: 3 1 auto;
+                                        width: auto;
+                                        
+                                        
+                                }
+                                
+                        .container{   
+                                flex: 5 1 auto;
+                                width: 100%;
+                                background: var(--background-color-container);
+                                color: var(--color-fuente-blanco);
+                                display: flex;
+                                flex-direction: column;
+                                flex-flow: nowrap;
+                                justify-content: space-around;
+                                align-items: center;
+                                border-radius: 15px;}
+                                
+                                
+
+                                .box-center,.box-left,.box-right {  
+                                        flex: 2 1 auto; 
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        justify-content: center;
+                                        max-width: 30%;
+                                        max-height: 100%;
+                                        text-align: justify;
+                                       }
+
+                                        .box-center h4,.box-left h4,.box-right h4{ 
+                                                        text-align: center;
+                                                        height: max-content;
+                                                        min-height: max-content  ;
+                                                        font-size: 20px;
+                                                        flex: 5 1 auto;
+                                                        color:var(--background-color-box);}
+                                        .iconos,.circulo1,.circulo2{ 
+
+                                                        
+                                                        flex: 1 1 auto;
+                                                        display: flex;
+                                                        flex-flow: row nowrap;
+                                                        
+                                                        width: 8vw;
+                                                        height: 8vw;
+                                                        border-radius: 50%;
+                                                        background: var(--background-color-circulo);
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        text-align: center;
+                                                        margin: auto;
+                                                        padding:3%}
+                                                .andr{
+                                                        align-self: center;
+                                                        flex: 1 1 auto;}
+                                                .apple{
+                                                        align-self: center;
+                                                        flex: 1 1 auto;}
+                                                .box-left svg,.box-right svg{ 
+                                                                align-self: center;
+                                                                flex: 1 1 auto;} 
+                                        .box-center p,.box-left p,.box-right p{
+                                                        flex: 1 1 auto;
+                                                        color: var(--color-fuente-texto);
+                                                        font-size: 13px;
+                                                }
+
+                                                @media all and (min-width: 1100px){
+                                                        .iconos,.circulo1,.circulo2{
+
+                                                                        width: 6vw;
+                                                                        height: 6vw;      }}
+                        
+                                
+                .container2{    
+                        
+                                flex: 3 1 auto;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                align-content: center;
+                                background: var(--background-color-container2);
+                                border-radius: 20px;
+                                padding: 1em;}
+
+
+                                h3{
+                                        flex: 1 1 auto;
+                                        text-align: center;
+                                        font-size: 30px;
+                                        color: var(--color-fuente-texto);
+                                        margin-bottom: 1%;
+                                }
+                                
+                                .formulario {
+                                        scroll-snap-align: center;
+                                        scroll-snap-stop: always;
+                                        flex: 8 1 auto;
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        background-color: var(--backgrpund-color-form);
+                                        color: var(--color-fuente-form);
+                                        width: 60vw;
+                                        height: auto;
+                                        border-radius: 25px;
+                                        margin: auto;
+                                        padding: 5px;}
+
+                                        
+                                        .formulario input{
+                                                padding: .3em;
+                                                border-radius: 10px;
+                                                margin-left: 3px;
+                                                margin-right: 3px;
+                                                width: 75%;}
+
+                                        .contacto2{
+                                                        flex: 1 1 auto;
+                                                padding: 0.3em;}
+                                                .encabezado-form{
+                                                                font-size: 20px;
+                                                                text-align: center; 
+                                                                color: rgb(255, 209, 5);}
+                                        .contenedor-campos {
+                                                        flex: 8 1 auto;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        flex-wrap: wrap;
+                                                        padding: .3em;}
+                                                .nameph{
+                                                        flex: 1 1 auto;
+                                                        display: flex;
+                                                        flex-flow: row nowrap;
+                                                        padding: .3em;
+                                                }  
+                                                        .name2{
+                                                                flex: 1 1 auto;
+                                                                display: flex;
+                                                                align-items: baseline;
+                                                                }
+                                                                .name2 label{
+                                                                        flex: 0.1 1 auto;
+                                                                        width:auto;
+                                                                        } 
+                                                        .name2 input{
+                                                                        flex: 5 1 auto;
+                                                                        border-radius: 8px;
+                                                                        }      
+                                                .phone{
+                                                        flex: 1 1 auto;
+                                                        display: flex;
+                                                        align-items: baseline;
+                                                                                }     
+                                                        .phone label{
+                                                                        flex: 0.1 1 auto;
+                                                                        width: auto;}
+                                                        .phone input{
+                                                                        flex: 5 1 auto;
+                                                                        margin-right: 2vw;
+                                                                        border-radius: 8px;
+                                                                        }         
+                                        .correo2{
+                                                flex: 1 1 auto;
+                                                display: flex;
+                                                flex-flow: row nowrap;
+                                                align-items: baseline;
+                                                padding: .3em;}
+                                                .correo2 label{ 
+                                                                flex: 0.1 1 auto;
+                                                               }
+                                                .correo2  input{
+                                                                flex: 1 1 auto;
+                                                                margin-right: 2vw;
+                                                                border-radius: 8px;
+                                                                }
+                                                              
+                                                                
+                                        .mensaje{
+                                                flex: 1 1 auto;
+                                                display: flex;
+                                                align-items: baseline;
+                                                flex-flow: row nowrap;
+                                                padding: .3em;}
+
+                                                .mensaje label{ 
+                                                                
+                                                                flex: 0.1 1 auto;}
+                                                .mensaje textarea{ 
+                                                                flex: 5 1 auto;
+                                                                width: auto;
+                                                                border-radius: 8px;
+                                                                margin-right: 2vw;
+                                                                height: 5vw;}
+
+                                .enviar{
+                                        flex: 1 1 auto;
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        margin-right: 4%;}
+                                        .eviar p{
+                                                flex: 1 1 auto;
+                                                align-self: flex-end;}
+                                        .enviar p input {
+                                                        flex: 1 1 auto;
+                                                        background: var(--background-color-boton);
+                                                        width: 150px;
+                                                        border-radius: 8px;
+                                                        color: white;}
+        .footer{ 
+                flex: 1 1 auto;
+                      }
+                .pie{
+                         text-align:center; 
+                         margin-top: 25px;
+                         font-size: 1em;
+                        }
+
+@media all and (max-width: 1100px){
+        .main{width: 98.6vw;
+                                }}
+
+  @media all and (max-width: 800px){
+                 .menu1{
+                                 flex-flow: column nowrap;}   
+                .seccion1{
+                                flex-flow: row nowrap;}
+                .inicio1 a, .registro a {
+                                        font-size: 3vw;}
+                .menu2{
+                                flex-flow: column nowrap;}     
+                .titulo2{
+                                font-size: 5vw;}
+                .listado a{
+                                font-size: 3vw;}
+                .container2 h3, .main h4{ 
+                                 font-size: 5vw;}
+
+                .circulo1,.circulo2,.iconos{      
+                                                width: 10vw;
+                                                height: 10vw;}
+                .box-center h4,.box-left h4, .box-right h4{
+                                                                font-size: 5vw;}
+
+                .container{
+                                flex-flow: column nowrap;}
+                        .box-center, .box-left, .box-right{
+                                                                max-width: 75%;  }
+              
+                .formulario {
+                                        max-width: 800px;
+                                        width: 75vw;;
+                                }
+                .nameph{
+                        flex-flow: column nowrap;} 
+                        .nav1 a, .nav2 a, .nav3 a, .nav4 a { 
+                                        font-size: 5vw;}
+                .name2 input{   width: 100vw;
+                                margin-right: 3vw;}
+                .phone input, .correo2  input,.mensaje textarea {
+                                
+                                margin-right: 3vw;}         
+                .encabezado-form{
+                                font-size: 2.5vw;}   
+                .footer{    font-size: 2.5vw; } 
+                        }
+              
+@media all and (max-width: 480px){
+        .container2 h3, .main h4{ 
+                font-size: 1.6rem;}                                                    
+        .campo {
+                flex-flow: column;
+        }
+                               
+        .phone input, .name2 input,.correo2  input,.mensaje textarea {
+                width:95%;                
+                margin-right: 3vw;
+        }                              
+        .circulo1,.circulo2,.iconos{      
+                                         width: 60px;
+                                         height: 60px;}
+        .box-center h4,.box-left h4, .box-right h4{
+                                font-size: 1.5rem;}        
+        .encabezado-form{
+                                font-size:1rem;         
+                        }            
+        .footer{    font-size: 0.8rem; } 
+        .listado{ padding: 8px;}                   
+                                       }
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+                
+                
+                
+
+
+
+
+
+ 
